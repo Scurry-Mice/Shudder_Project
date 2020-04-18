@@ -25,7 +25,7 @@ public class Menu_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Exit_Panel&& Input.GetKeyDown(KeyCode.Escape)|| Setting_Panel&&Input.GetKeyDown(KeyCode.Escape)||Level_panel&& Input.GetKeyDown(KeyCode.Escape))
+        if (Exit_Panel && Input.GetKeyDown(KeyCode.Escape) || Setting_Panel && Input.GetKeyDown(KeyCode.Escape) || Level_panel && Input.GetKeyDown(KeyCode.Escape))
         {
             Back_To_Menu_Button();
         }
