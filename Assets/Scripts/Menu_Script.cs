@@ -63,6 +63,10 @@ public class Menu_Script : MonoBehaviour
         }
     }
 
-
+    //загрузка нужного уровня
+    public void Load_level(int Num_Scene)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(Num_Scene);
+    }
 
 }
