@@ -15,7 +15,7 @@ public class Menu_Script : MonoBehaviour
         Menu_Panel = GameObject.Find("Canvas/Panel_Menu");
         Setting_Panel = GameObject.Find("Canvas/Panel_Settings");
         Level_panel = GameObject.Find("Canvas/Panel_Levels");
-        Exit_Panel = GameObject.Find("Canvas/Panel_Menu/Panel_Exit");
+        Exit_Panel = GameObject.Find("Canvas/Panel_Exit");
 
         Setting_Panel.SetActive(false);
         Exit_Panel.SetActive(false);
@@ -67,6 +67,25 @@ public class Menu_Script : MonoBehaviour
     public void Load_level(int Num_Scene)
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(Num_Scene);
+    }
+
+    public void Button_setting()
+    {
+        Menu_Panel.SetActive(false);
+        Setting_Panel.SetActive(true);
+    }
+
+    //Вызов панели выхода
+    public void Button_Exit_Panel()
+    {
+        Menu_Panel.SetActive(false);
+        Exit_Panel.SetActive(true);
+    }
+
+    // кнопка подтверждения выхода (Yes)
+    public void Exit_Button()
+    {
+        Application.Quit();
     }
 
 }
