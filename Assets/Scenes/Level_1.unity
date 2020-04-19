@@ -1965,12 +1965,17 @@ PrefabInstance:
     - target: {fileID: 6641952839421075453, guid: f1d439da711526a4291d7b0a35327a31,
         type: 3}
       propertyPath: offset.x
-      value: 1.8
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 6641952839421075453, guid: f1d439da711526a4291d7b0a35327a31,
         type: 3}
       propertyPath: offset.y
-      value: 1.9
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641952839421075453, guid: f1d439da711526a4291d7b0a35327a31,
+        type: 3}
+      propertyPath: dumping
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6641952839421075454, guid: f1d439da711526a4291d7b0a35327a31,
         type: 3}
