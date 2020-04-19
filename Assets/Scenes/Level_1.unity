@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 1189716562}
   m_Layer: 0
   m_Name: Hero_Kitty
-  m_TagString: Untagged
+  m_TagString: Hero_Kitty
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3393,7 +3393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dumping: 1.5
   offset: {x: 2, y: 1}
-  isLeft: 0
 --- !u!1 &2025100668
 GameObject:
   m_ObjectHideFlags: 0
