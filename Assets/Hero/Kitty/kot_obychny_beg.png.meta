@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: f7925a45b52bd9141810a23cfd2f3f86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1846383008110988664
+    second: kot_obychny_beg_1
+  - first:
+      213: -6768150270639242499
+    second: kot_obychny_beg_1
+  - first:
+      213: -6789376759045549960
+    second: kot_obychny_beg_2
+  - first:
+      213: 6290109008757481861
+    second: kot_obychny_beg_3
+  - first:
+      213: 7682640189290767337
+    second: kot_obychny_beg_4
+  - first:
+      213: 5428102038288160629
+    second: kot_obychny_beg_5
+  - first:
+      213: -2928683070955182522
+    second: kot_obychny_beg_6
+  - first:
+      213: -6589986971416796022
+    second: kot_obychny_beg_7
+  - first:
+      213: 985083175954984566
+    second: kot_obychny_beg_8
+  - first:
+      213: -1846782233306430811
+    second: kot_obychny_beg_9
+  - first:
+      213: -2833339492319943718
+    second: kot_obychny_beg_10
+  - first:
+      213: -7590342769553082001
+    second: kot_obychny_beg_11
+  - first:
+      213: 490424586005536100
+    second: kot_obychny_beg_12
+  - first:
+      213: -6910437544912215634
+    second: kot_obychny_beg_13
+  - first:
+      213: 6267371275630002940
+    second: kot_obychny_beg_14
+  - first:
+      213: 166568340357315320
+    second: kot_obychny_beg_15
+  - first:
+      213: -5579167762749463732
+    second: kot_obychny_beg_16
+  - first:
+      213: 811187528517675439
+    second: kot_obychny_beg_17
+  - first:
+      213: -849697314629556263
+    second: kot_obychny_beg_18
+  - first:
+      213: 8912209272521900475
+    second: kot_obychny_beg_19
+  - first:
+      213: -9023368119348658923
+    second: kot_obychny_beg_20
+  - first:
+      213: 6406118889453149156
+    second: kot_obychny_beg_21
+  - first:
+      213: -8652565299338953052
+    second: kot_obychny_beg_22
+  - first:
+      213: -8564873673505951010
+    second: kot_obychny_beg_23
+  - first:
+      213: -7805721657189461351
+    second: kot_obychny_beg_24
+  - first:
+      213: 6959615458083430074
+    second: kot_obychny_beg_25
+  - first:
+      213: 4595379299602763833
+    second: kot_obychny_beg_26
+  - first:
+      213: -8308997222596616956
+    second: kot_obychny_beg_27
+  - first:
+      213: -3411422702386859193
+    second: kot_obychny_beg_28
+  - first:
+      213: 3618787940774703837
+    second: kot_obychny_beg_29
+  - first:
+      213: 5429180484985078926
+    second: kot_obychny_beg_30
+  - first:
+      213: -8878936716086564523
+    second: kot_obychny_beg_31
+  - first:
+      213: 3747192012881525009
+    second: kot_obychny_beg_32
+  - first:
+      213: -7920755857344973057
+    second: kot_obychny_beg_33
+  - first:
+      213: -4238282007860242823
+    second: kot_obychny_beg_34
+  - first:
+      213: 919404234666188026
+    second: kot_obychny_beg_35
+  - first:
+      213: -4003267093497383337
+    second: kot_obychny_beg_36
+  - first:
+      213: -7605914941173312292
+    second: kot_obychny_beg_37
+  - first:
+      213: -8464765910063236021
+    second: kot_obychny_beg_38
+  - first:
+      213: 765418483298206808
+    second: kot_obychny_beg_39
+  - first:
+      213: 4827630418648985380
+    second: kot_obychny_beg_40
+  - first:
+      213: 2481055856978923895
+    second: kot_obychny_beg_41
+  - first:
+      213: -8338733814363930697
+    second: kot_obychny_beg_42
+  - first:
+      213: 8269440604076392529
+    second: kot_obychny_beg_43
+  - first:
+      213: -5436195872538172417
+    second: kot_obychny_beg_44
+  - first:
+      213: -5300157648018433637
+    second: kot_obychny_beg_45
+  - first:
+      213: -2184399862418993864
+    second: kot_obychny_beg_46
+  - first:
+      213: 8648076237656257624
+    second: kot_obychny_beg_47
+  - first:
+      213: 8078197252026643781
+    second: kot_obychny_beg_48
+  - first:
+      213: -4730607548944365137
+    second: kot_obychny_beg_49
+  - first:
+      213: 4093161887183883270
+    second: kot_obychny_beg_50
+  - first:
+      213: -6031851155945379103
+    second: kot_obychny_beg_51
+  - first:
+      213: -6083115461476007107
+    second: kot_obychny_beg_52
+  - first:
+      213: -6178134568411999791
+    second: kot_obychny_beg_53
+  - first:
+      213: 874755039506086263
+    second: kot_obychny_beg_54
+  - first:
+      213: -5371248190473179190
+    second: kot_obychny_beg_55
+  - first:
+      213: -7687212091960279799
+    second: kot_obychny_beg_56
+  - first:
+      213: 2117124950620895574
+    second: kot_obychny_beg_57
+  - first:
+      213: 3986931747388546420
+    second: kot_obychny_beg_58
+  - first:
+      213: -1043541060872953453
+    second: kot_obychny_beg_59
+  - first:
+      213: -5167084562640831692
+    second: kot_obychny_beg_60
+  - first:
+      213: -8944563835473739217
+    second: kot_obychny_beg_61
+  - first:
+      213: -2005980043427605434
+    second: kot_obychny_beg_62
+  - first:
+      213: -890461109329509249
+    second: kot_obychny_beg_63
+  - first:
+      213: -5590408627015785320
+    second: kot_obychny_beg_64
+  - first:
+      213: 7751693048042981452
+    second: kot_obychny_beg_65
+  - first:
+      213: 8162334428631097151
+    second: kot_obychny_beg_66
+  - first:
+      213: -1891602739599351679
+    second: kot_obychny_beg_67
+  - first:
+      213: 886644022546814067
+    second: kot_obychny_beg_68
+  - first:
+      213: -8331044767201936298
+    second: kot_obychny_beg_69
+  - first:
+      213: -4484714707992997202
+    second: kot_obychny_beg_70
+  - first:
+      213: 3174936129457572801
+    second: kot_obychny_beg_71
+  - first:
+      213: -7267120049144501852
+    second: kot_obychny_beg_72
+  - first:
+      213: 2617307102792327034
+    second: kot_obychny_beg_73
+  - first:
+      213: 3982656551209719617
+    second: kot_obychny_beg_74
+  - first:
+      213: -5133684496579689374
+    second: kot_obychny_beg_75
+  - first:
+      213: -8720174771792572565
+    second: kot_obychny_beg_76
+  - first:
+      213: 215932672513946261
+    second: kot_obychny_beg_77
+  - first:
+      213: 8696011768721802403
+    second: kot_obychny_beg_78
+  - first:
+      213: -1934371957781197160
+    second: kot_obychny_beg_79
+  - first:
+      213: 836107418307164167
+    second: kot_obychny_beg_80
+  - first:
+      213: -6077846953985369700
+    second: kot_obychny_beg_81
+  - first:
+      213: 2173500687404266772
+    second: kot_obychny_beg_82
+  - first:
+      213: -7623347013464593808
+    second: kot_obychny_beg_83
+  - first:
+      213: 6221832042860613644
+    second: kot_obychny_beg_84
+  - first:
+      213: 2509205339343679017
+    second: kot_obychny_beg_85
+  - first:
+      213: -1072275495860932268
+    second: kot_obychny_beg_86
+  - first:
+      213: 4301334752235940871
+    second: kot_obychny_beg_87
+  - first:
+      213: 50302467608610779
+    second: kot_obychny_beg_1
+  - first:
+      213: 6100319783340800060
+    second: kot_obychny_beg_1
+  - first:
+      213: -4223054517005586854
+    second: kot_obychny_beg_2
+  - first:
+      213: -5059939942204347923
+    second: kot_obychny_beg_3
+  - first:
+      213: 879419328147648252
+    second: kot_obychny_beg_4
+  - first:
+      213: 3139808868789540025
+    second: kot_obychny_beg_5
+  - first:
+      213: -1868766203886357066
+    second: kot_obychny_beg_6
+  - first:
+      213: -6554964231128239207
+    second: kot_obychny_beg_7
+  - first:
+      213: -7532917069979275352
+    second: kot_obychny_beg_8
+  - first:
+      213: 1386693893486878054
+    second: kot_obychny_beg_9
+  - first:
+      213: -1466303101853335531
+    second: kot_obychny_beg_10
+  - first:
+      213: 6277647129086253965
+    second: kot_obychny_beg_11
+  - first:
+      213: 1282819702674795437
+    second: kot_obychny_beg_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kot_obychny_beg_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 31
+        width: 217
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd70329e3d5b2b000800000000000000
+      internalID: 50302467608610779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_2
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 31
+        width: 216
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ee5ce9a42b465c0800000000000000
+      internalID: -4223054517005586854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_3
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 33
+        width: 203
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de969186e6b77c9b0800000000000000
+      internalID: -5059939942204347923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_4
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 35
+        width: 213
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe6ad63833543c00800000000000000
+      internalID: 879419328147648252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_5
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 37
+        width: 212
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b452ded787d29b20800000000000000
+      internalID: 3139808868789540025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_6
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 33
+        width: 236
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b53919e90fc016e0800000000000000
+      internalID: -1868766203886357066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_7
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 34
+        width: 247
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993b530f2c61805a0800000000000000
+      internalID: -6554964231128239207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_8
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 32
+        width: 232
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afa86106d3b57790800000000000000
+      internalID: -7532917069979275352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_9
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 32
+        width: 236
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d1d75cfb68e3310800000000000000
+      internalID: 1386693893486878054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_10
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 32
+        width: 231
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5108af00915a6abe0800000000000000
+      internalID: -1466303101853335531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_11
+      rect:
+        serializedVersion: 2
+        x: 2348
+        y: 32
+        width: 227
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bdf62bdceae1750800000000000000
+      internalID: 6277647129086253965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kot_obychny_beg_12
+      rect:
+        serializedVersion: 2
+        x: 2575
+        y: 33
+        width: 221
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabadc019bd7dc110800000000000000
+      internalID: 1282819702674795437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
