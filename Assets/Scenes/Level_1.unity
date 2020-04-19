@@ -1857,10 +1857,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5239526921893861560, guid: 583ae52b51019a245b6761f666b8aae1,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2986261965420731975, guid: db64c0b71a35e7c40b17266eac1204c7,
+        type: 3}
     - target: {fileID: 5239526921893861571, guid: 583ae52b51019a245b6761f666b8aae1,
         type: 3}
       propertyPath: m_Name
       value: Hero_Kitty
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239526921893861573, guid: 583ae52b51019a245b6761f666b8aae1,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5239526921893861573, guid: 583ae52b51019a245b6761f666b8aae1,
+        type: 3}
+      propertyPath: m_AutoTiling
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5239526921893861574, guid: 583ae52b51019a245b6761f666b8aae1,
         type: 3}
@@ -1945,6 +1961,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641952839421075453, guid: f1d439da711526a4291d7b0a35327a31,
+        type: 3}
+      propertyPath: offset.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6641952839421075453, guid: f1d439da711526a4291d7b0a35327a31,
+        type: 3}
+      propertyPath: offset.y
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 6641952839421075454, guid: f1d439da711526a4291d7b0a35327a31,
         type: 3}
