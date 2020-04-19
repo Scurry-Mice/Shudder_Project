@@ -9,7 +9,7 @@ public class Hero_Control : MonoBehaviour
     private float maxSpeed = 2f;
     private Vector2 moveVelocity;
     //переменная для определения направления персонажа вправо/влево
-    private bool isFacingRight = true;
+    internal static bool isFacing = true;
 
     //ссылки на компонент анимаций и физику
     private Rigidbody2D Hero_RB_2D;
@@ -52,11 +52,11 @@ public class Hero_Control : MonoBehaviour
         Hero_RB_2D.velocity = new Vector2(moveInput * maxSpeed, Hero_RB_2D.velocity.y);
 
         //если нажали клавишу для перемещения вправо, а персонаж направлен влево
-        if (moveInput > 0 && !isFacingRight)
+        if (moveInput > 0 && !isFacing)
             //отражаем персонажа вправо
             Flip();
         //обратная ситуация. отражаем персонажа влево
-        else if (moveInput < 0 && isFacingRight)
+        else if (moveInput < 0 && isFacing)
             Flip();
 
         //Hero_RB_2D.MovePosition(Hero_RB_2D.position + moveVelocity * Time.fixedDeltaTime);
@@ -66,7 +66,7 @@ public class Hero_Control : MonoBehaviour
     private void Flip()
     {
         //меняем направление движения персонажа
-        isFacingRight = !isFacingRight;
+        isFacing = !isFacing;
         //получаем размеры персонажа
         Vector3 theScale = transform.localScale;
         //зеркально отражаем персонажа по оси Х
