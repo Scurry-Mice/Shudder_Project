@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class Hero_Control : MonoBehaviour
 {
-
+    private float jumping = 250f;
     //переменная для установки макс. скорости персонажа
-    private float maxSpeed = 2f;
-    private Vector2 moveVelocity;
+    [SerializeField] private float maxSpeed = 2f;
+    [SerializeField] private Vector2 moveVelocity;
     //переменная для определения направления персонажа вправо/влево
     internal static bool isFacing = true;
+
+    public Transform GRNDCheck;              // столкновение с землей GRND-ground
+    private float GRNDRadius = 0.2f;           //радиус определения соприкосновения с землей
+    public LayerMask WhatIsGRND;                //ссылка на слой предствляющий землю
+    private bool GRNDed;                      //текущая позиция (земля/воздух)
 
     //ссылки на компонент анимаций и физику
     private Rigidbody2D Hero_RB_2D;
     private Animator Hero_Anim_Contr;
 
+    private float qqq;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +33,17 @@ public class Hero_Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         //Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         //moveVelocity = moveInput * maxSpeed;
+        if (Input.GetKeyDown(KeyCode.Space) && GRNDed)
+        {
+            qqq = transform.position.y;
+            qqq += 1.6f;
+            Hero_Anim_Contr.SetBool("ground", false);                                              //устанавливаем в аниматоре переменную фолс
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jumping));             //прикладываем силу чтобы герой подпрыгнул
 
+        }
     }
 
     /// Выполняем действия в методе FixedUpdate, т. к. в компоненте Animator персонажа
@@ -58,6 +71,10 @@ public class Hero_Control : MonoBehaviour
         //обратная ситуация. отражаем персонажа влево
         else if (moveInput < 0 && isFacing)
             Flip();
+        
+        GRNDed = Physics2D.OverlapCircle(GRNDCheck.position, GRNDRadius, WhatIsGRND);               //определим на земле ли персонаж
+        Hero_Anim_Contr.SetBool("ground", GRNDed);                                                             //усталавливаем соотв переменную в аниматоре
+        Hero_Anim_Contr.SetFloat("v_speed", GetComponent<Rigidbody2D>().velocity.y);                           //устанавливаем в аниматоре скорость взлета/падения
 
         //Hero_RB_2D.MovePosition(Hero_RB_2D.position + moveVelocity * Time.fixedDeltaTime);
     }
