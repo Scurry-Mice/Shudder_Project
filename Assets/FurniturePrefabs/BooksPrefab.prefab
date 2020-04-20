@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1396533534054696543}
   - component: {fileID: 5124255446416546652}
   - component: {fileID: 5666599213988649155}
-  m_Layer: 0
-  m_Name: knigi
+  m_Layer: 8
+  m_Name: BooksPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

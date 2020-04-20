@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 47183917390435958}
   - component: {fileID: 9021581678447431828}
-  m_Layer: 0
-  m_Name: korobka2
+  m_Layer: 8
+  m_Name: BoxOpenPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

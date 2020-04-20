@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1870250310900286736}
   - component: {fileID: 1870250310900286751}
   - component: {fileID: 2250147361590252930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BookPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7930356275355614575}
   - component: {fileID: 7269452423233616276}
   - component: {fileID: 3074612778552594231}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StulPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

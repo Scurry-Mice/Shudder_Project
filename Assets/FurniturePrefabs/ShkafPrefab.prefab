@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2847344619766430338}
   - component: {fileID: 3226780057731014798}
   - component: {fileID: 385556756177455768}
-  m_Layer: 0
-  m_Name: shkaf
+  m_Layer: 8
+  m_Name: ShkafPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

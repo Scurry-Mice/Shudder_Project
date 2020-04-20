@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2937678709426139676}
   - component: {fileID: 1037342848643986940}
   - component: {fileID: 3325653006060573251}
-  m_Layer: 0
-  m_Name: stol
+  m_Layer: 8
+  m_Name: StolPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

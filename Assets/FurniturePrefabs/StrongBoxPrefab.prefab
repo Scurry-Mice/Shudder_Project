@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1410424943069546062}
   - component: {fileID: 3252103849106395373}
   - component: {fileID: 8038135289244924540}
-  m_Layer: 0
-  m_Name: yaschik
+  m_Layer: 8
+  m_Name: StrongBoxPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

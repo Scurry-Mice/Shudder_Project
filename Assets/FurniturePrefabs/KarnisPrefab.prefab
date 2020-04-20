@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7916092427128863720}
   - component: {fileID: 5249033814196252537}
   - component: {fileID: 3793192689314852448}
-  m_Layer: 0
-  m_Name: karniz
+  m_Layer: 8
+  m_Name: KarnisPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
