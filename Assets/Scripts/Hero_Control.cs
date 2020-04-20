@@ -27,6 +27,7 @@ public class Hero_Control : MonoBehaviour
     {
         Hero_RB_2D = GetComponent<Rigidbody2D>();
         Hero_Anim_Contr = GetComponent<Animator>();
+        GRNDCheck = GameObject.Find("Hero_Kitty/GRND_Check").transform;
     }
 
 
