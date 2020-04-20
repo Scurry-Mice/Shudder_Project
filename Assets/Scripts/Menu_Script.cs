@@ -16,10 +16,10 @@ public class Menu_Script : MonoBehaviour
         Setting_Panel = GameObject.Find("Canvas/Panel_Settings");
         Level_panel = GameObject.Find("Canvas/Panel_Levels");
         Exit_Panel = GameObject.Find("Canvas/Panel_Exit");
-
-        Setting_Panel.SetActive(false);
+        
         Exit_Panel.SetActive(false);
         Level_panel.SetActive(false);
+        //Setting_Panel.SetActive(false);
     }
 
     // Update is called once per frame
