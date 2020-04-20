@@ -5,13 +5,16 @@ using UnityEngine;
 public class Level_UI : MonoBehaviour
 {
     // PAUSE
-    public GameObject Pause_Panel;
-    public GameObject Pause_Button_Panel_GO;
-    public GameObject Back_Menu_Panel_GO;
-    public GameObject Exit_Game_Panel_GO;
+    [SerializeField] private GameObject Pause_Panel;
+    [SerializeField] private GameObject Pause_Button_Panel_GO;
+    [SerializeField] private GameObject Back_Menu_Panel_GO;
+    [SerializeField] private GameObject Exit_Game_Panel_GO;
+
+    [SerializeField] internal static GameObject Panel_Zapisok;
+
 
     // UI
-    public GameObject UI_Panel;
+    [SerializeField] private GameObject UI_Panel;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,8 @@ public class Level_UI : MonoBehaviour
         Back_Menu_Panel_GO = GameObject.Find("Canvas/Panel_Pause/Back_Menu_Panel");
         Exit_Game_Panel_GO = GameObject.Find("Canvas/Panel_Pause/Exit_Game_Panel");
 
+        Panel_Zapisok = GameObject.Find("Canvas/NotePad");
+
         UI_Panel = GameObject.Find("Canvas/Panel_UI");
 
         Pause_Button_Panel_GO.SetActive(false);
@@ -29,12 +34,22 @@ public class Level_UI : MonoBehaviour
         Back_Menu_Panel_GO.SetActive(false);
         Exit_Game_Panel_GO.SetActive(false);
 
+        Panel_Zapisok.SetActive(false);
+
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    Panel_Zapisok.SetActive(true);
+        //}
+        //if (Input.GetKeyDown(KeyCode.W))
+        //{
+        //    Panel_Zapisok.SetActive(false);
+        //}
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
