@@ -8,6 +8,7 @@ public class Level_UI : MonoBehaviour
     public GameObject Pause_Panel;
     public GameObject Pause_Button_Panel_GO;
     public GameObject Back_Menu_Panel_GO;
+    public GameObject Exit_Game_Panel_GO;
 
     // UI
     public GameObject UI_Panel;
@@ -19,13 +20,14 @@ public class Level_UI : MonoBehaviour
         Pause_Panel = GameObject.Find("Canvas/Panel_Pause");
         Pause_Button_Panel_GO = GameObject.Find("Canvas/Panel_Pause/Pause_Button_Panel");
         Back_Menu_Panel_GO = GameObject.Find("Canvas/Panel_Pause/Back_Menu_Panel");
+        Exit_Game_Panel_GO = GameObject.Find("Canvas/Panel_Pause/Exit_Game_Panel");
 
         UI_Panel = GameObject.Find("Canvas/Panel_UI");
 
         Pause_Button_Panel_GO.SetActive(false);
         Pause_Panel.SetActive(false);
         Back_Menu_Panel_GO.SetActive(false);
-
+        Exit_Game_Panel_GO.SetActive(false);
 
 
     }
@@ -43,7 +45,11 @@ public class Level_UI : MonoBehaviour
         
     }
     
-    
+    public void Exit_Button_Panel()
+    {
+        Pause_Button_Panel_GO.SetActive(false);
+        Exit_Game_Panel_GO.SetActive(true);
+    }
 
     public void Back_Button()
     {
@@ -58,6 +64,7 @@ public class Level_UI : MonoBehaviour
         Back_Menu_Panel_GO.SetActive(true);
     }
 
+    //выход в меню
     public void Back_Yes()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
@@ -67,9 +74,14 @@ public class Level_UI : MonoBehaviour
     {
         Pause_Button_Panel_GO.SetActive(true);
         Back_Menu_Panel_GO.SetActive(false);
+        Exit_Game_Panel_GO.SetActive(false);
     }
 
-
+    // кнопка подтверждения выхода (Yes)
+    public void Exit_Button()
+    {
+        Application.Quit();
+    }
 
 
 
