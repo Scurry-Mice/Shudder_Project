@@ -47,5 +47,9 @@ public class PlayerController : PhysicsObject
         animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
         targetVelocity = move * maxSpeed;
+
     }
+
+    
+   
 }

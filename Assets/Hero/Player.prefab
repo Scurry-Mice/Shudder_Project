@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 5239526923206105910}
   - component: {fileID: 5239526921893861560}
   - component: {fileID: 5239526921893861575}
-  - component: {fileID: 2708316770710608146}
   - component: {fileID: 3647466386559825768}
   - component: {fileID: 964946266398189210}
   - component: {fileID: -2876669985676995303}
+  - component: {fileID: 2708316770710608146}
   m_Layer: 9
   m_Name: Player
   m_TagString: Hero_Kitty
@@ -108,22 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &2708316770710608146
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5239526921893861571}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.1, y: 0.0001}
-  m_Direction: 0
 --- !u!114 &3647466386559825768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,3 +157,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &2708316770710608146
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239526921893861571}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 1.1, y: 0.0001}
+  m_Direction: 0

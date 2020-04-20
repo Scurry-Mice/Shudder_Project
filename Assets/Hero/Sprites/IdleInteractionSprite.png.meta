@@ -267,12 +267,12 @@ TextureImporter:
       name: kot_osmotrivatsya_5
       rect:
         serializedVersion: 2
-        x: 872
+        x: 933
         y: 10
-        width: 161
+        width: 98
         height: 146
       alignment: 9
-      pivot: {x: 0.5480233, y: 0.5}
+      pivot: {x: 0.5300287, y: 0.3731612}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
