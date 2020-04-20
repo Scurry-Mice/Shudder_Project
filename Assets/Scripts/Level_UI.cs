@@ -11,7 +11,7 @@ public class Level_UI : MonoBehaviour
     public GameObject Exit_Game_Panel_GO;
 
     //Notepad
-    [SerializeField] public static GameObject Notepad_Panel;
+    public static GameObject Notepad_Panel;
     private bool isShowed = false;
 
     // UI

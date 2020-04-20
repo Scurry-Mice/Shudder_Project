@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class OpenNotepad : MonoBehaviour
 {
-    Level_UI.
+    
 }
