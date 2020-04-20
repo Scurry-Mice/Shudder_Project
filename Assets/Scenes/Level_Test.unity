@@ -4804,6 +4804,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &2128127263 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6641952839421075455, guid: f1d439da711526a4291d7b0a35327a31,
+    type: 3}
+  m_PrefabInstance: {fileID: 12206347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!61 &57402613565575704
 BoxCollider2D:
   m_ObjectHideFlags: 0
