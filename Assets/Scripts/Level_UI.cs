@@ -10,6 +10,10 @@ public class Level_UI : MonoBehaviour
     public GameObject Back_Menu_Panel_GO;
     public GameObject Exit_Game_Panel_GO;
 
+    //Notepad
+    [SerializeField] public static GameObject Notepad_Panel;
+    private bool isShowed = false;
+
     // UI
     public GameObject UI_Panel;
 
@@ -29,12 +33,20 @@ public class Level_UI : MonoBehaviour
         Back_Menu_Panel_GO.SetActive(false);
         Exit_Game_Panel_GO.SetActive(false);
 
+        Notepad_Panel = GameObject.Find("Canvas/Notepad");
 
+        Notepad_Panel.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            isShowed = !isShowed;
+            Notepad_Panel.SetActive(isShowed);
+        }
+
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
