@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hero_Control : MonoBehaviour
 {
-    private float jumping = 250f;
+    private float jumping = 400f;
     //переменная для установки макс. скорости персонажа
     [SerializeField] private float maxSpeed = 2f;
     [SerializeField] private Vector2 moveVelocity;
