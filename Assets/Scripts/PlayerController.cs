@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : PhysicsObject
 {
+    bool q3 = false;
     internal static bool LOM_IN = false;
 
     public float maxSpeed = 7;
@@ -67,7 +68,22 @@ public class PlayerController : PhysicsObject
         if (Enter_Collision.gameObject.name == "FINISH_QUEST_2" && LOM_IN)
         {
             Quests.GO_Q_5();
+            HUMANOID.AnimHuman.SetTrigger("LomReady");
             Destroy(Enter_Collision.gameObject);
+            HUMANOID.fffff = true;
+            HUMANOID.sss();
+            q3 = true;
+        }
+
+        if (Enter_Collision.gameObject.name == "FINISH_QUEST_3")
+        {
+            if (q3)
+            {
+                Quests.GO_Q_6();
+                Destroy(Enter_Collision.gameObject);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+            }
+            
         }
     }
 
