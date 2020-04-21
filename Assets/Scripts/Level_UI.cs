@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Level_UI : MonoBehaviour
 {
@@ -62,6 +63,13 @@ public class Level_UI : MonoBehaviour
             Panel_Zapisok.SetActive(false);
         }
         
+    }
+
+    internal static string Find_Notes_TXT(string Text)
+    {
+        string TEXT = GameObject.Find("Canvas/NotePad/Text").GetComponent<Text>().text = Text;
+
+        return TEXT;
     }
     
     public void Exit_Button_Panel()
