@@ -23,6 +23,12 @@ public class PickUp : MonoBehaviour
                     // ITEAM CAN BE ADDED TO INVENTORY! 
                     inventory.isFull[i] = true;
                     Instantiate(itemButton, inventory.slots[i].transform, false);
+
+                    if (gameObject.CompareTag("LOM"))
+                    {
+                        PlayerController.LOM_IN = true;
+                    }
+
                     Destroy(gameObject);
                     break;
                 }

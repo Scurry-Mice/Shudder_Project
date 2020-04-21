@@ -5,22 +5,33 @@ using UnityEngine.UI;
 
 public class Quests : MonoBehaviour
 {
-    private readonly string Quest_1 = "Найти хозяина";
-    private readonly string Quest_2 = "Хозяин прижат и не может выбраться, думает о каком то ломе, что это?"; // Найти и принести лом.
-    private readonly string Quest_3 = "Хозяин слишком сильно ранен, он не хочет зализывать раны..."; // Найти и принести: бинт, спирт
-    private readonly string Quest_4 = "Хозяин выглядит голодным, миска воды и сосиска помогут ему!"; //  Найти и принести: бутылку воды, сосиску
+    internal static readonly string Quest_1 = "Найти хозяина";
+    internal static readonly string Quest_2 = "Хозяин прижат и не может выбраться, думает о каком то ломе, что это?"; // Найти и принести лом.
+    internal static readonly string Quest_3 = "Хозяин слишком сильно ранен, он не хочет зализывать раны..."; // Найти и принести: бинт, спирт
+    internal static readonly string Quest_4 = "Хозяин выглядит голодным, миска воды и сосиска помогут ему!"; //  Найти и принести: бутылку воды, сосиску
 
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
+    }
+
+    internal static void GO_Q_1()
+    {
+        GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_1;
+    }
+
+    internal static void GO_Q_2()
+    {
+        GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_2;
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.U))
         {
             GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_1;
@@ -37,5 +48,6 @@ public class Quests : MonoBehaviour
         {
             GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_4;
         }
+        */
     }
 }

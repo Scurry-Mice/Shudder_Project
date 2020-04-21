@@ -32,6 +32,9 @@ public class PhysicsObject : MonoBehaviour
         contactFilter.useTriggers = false;
         contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
         contactFilter.useLayerMask = true;
+
+        Quests.GO_Q_1();
+
     }
 
     void Update()

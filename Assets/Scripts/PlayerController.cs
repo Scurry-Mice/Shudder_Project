@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : PhysicsObject
 {
+    internal static bool LOM_IN = false;
 
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
@@ -56,6 +57,20 @@ public class PlayerController : PhysicsObject
         {
             Level_UI.rest();
         }
+
+        if (Enter_Collision.gameObject.name == "FINISH_QUEST_1")
+        {
+            Quests.GO_Q_2();
+            Destroy(Enter_Collision.gameObject);
+        }
+
+        if (Enter_Collision.gameObject.name == "FINISH_QUEST_2" && LOM_IN)
+        {
+            Quests.GO_Q_2();
+            Destroy(Enter_Collision.gameObject);
+        }
     }
+
+    
 
 }
