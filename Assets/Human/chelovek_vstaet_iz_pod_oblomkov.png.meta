@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 745ec5ea9f4de834b95d4846a223e505
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1299552563271885763
+    second: chelovek_vstaet_iz_pod_oblomkov_0
+  - first:
+      213: -8836324695154587063
+    second: chelovek_vstaet_iz_pod_oblomkov_1
+  - first:
+      213: -7863072322468140086
+    second: chelovek_vstaet_iz_pod_oblomkov_2
+  - first:
+      213: -6116150958837265810
+    second: chelovek_vstaet_iz_pod_oblomkov_3
+  - first:
+      213: -8283070142588929623
+    second: chelovek_vstaet_iz_pod_oblomkov_4
+  - first:
+      213: 1141054013570487705
+    second: chelovek_vstaet_iz_pod_oblomkov_5
+  - first:
+      213: 2380517532392795829
+    second: chelovek_vstaet_iz_pod_oblomkov_6
+  - first:
+      213: 7779663630580276176
+    second: chelovek_vstaet_iz_pod_oblomkov_7
+  - first:
+      213: -7034261042938228584
+    second: chelovek_vstaet_iz_pod_oblomkov_8
+  - first:
+      213: -6866493511737059887
+    second: chelovek_vstaet_iz_pod_oblomkov_9
+  - first:
+      213: -7894031831934518557
+    second: chelovek_vstaet_iz_pod_oblomkov_10
+  - first:
+      213: -7980240561776778032
+    second: chelovek_vstaet_iz_pod_oblomkov_11
+  - first:
+      213: -8159940732046276721
+    second: chelovek_vstaet_iz_pod_oblomkov_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_0
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 21
+        width: 232
+        height: 605
+      alignment: 9
+      pivot: {x: 0.44107896, y: 0.018740183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3e4c4cb20f80210800000000000000
+      internalID: 1299552563271885763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_1
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 19
+        width: 225
+        height: 608
+      alignment: 9
+      pivot: {x: 0.39064345, y: 0.02111494}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a8c41b1811f5580800000000000000
+      internalID: -8836324695154587063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_2
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 20
+        width: 246
+        height: 606
+      alignment: 9
+      pivot: {x: 0.3055137, y: 0.024045875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acba4101261c0e290800000000000000
+      internalID: -7863072322468140086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_3
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 18
+        width: 227
+        height: 609
+      alignment: 9
+      pivot: {x: 0.33138862, y: 0.015167478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a07d19b111f1ba0800000000000000
+      internalID: -6116150958837265810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_4
+      rect:
+        serializedVersion: 2
+        x: 1771
+        y: 14
+        width: 269
+        height: 611
+      alignment: 9
+      pivot: {x: 0.28657162, y: 0.012280023}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9b755479f9c0d80800000000000000
+      internalID: -8283070142588929623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_5
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 13
+        width: 253
+        height: 613
+      alignment: 9
+      pivot: {x: 0.28928348, y: 0.01164133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995176c6496d5df00800000000000000
+      internalID: 1141054013570487705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_6
+      rect:
+        serializedVersion: 2
+        x: 2508
+        y: 12
+        width: 301
+        height: 614
+      alignment: 9
+      pivot: {x: 0.2638479, y: 0.010210367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5beacdb451c490120800000000000000
+      internalID: 2380517532392795829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_7
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 13
+        width: 292
+        height: 616
+      alignment: 9
+      pivot: {x: 0.13485342, y: 0.0073623504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db53c48adae6fb60800000000000000
+      internalID: 7779663630580276176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_8
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 11
+        width: 296
+        height: 618
+      alignment: 9
+      pivot: {x: 0.16749696, y: 0.015592335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8905c4eb9d8416e90800000000000000
+      internalID: -7034261042938228584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_9
+      rect:
+        serializedVersion: 2
+        x: 3628
+        y: 9
+        width: 317
+        height: 591
+      alignment: 9
+      pivot: {x: 0.18089972, y: 0.011965824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d55364088055b0a0800000000000000
+      internalID: -6866493511737059887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_10
+      rect:
+        serializedVersion: 2
+        x: 3999
+        y: 10
+        width: 330
+        height: 590
+      alignment: 9
+      pivot: {x: 0.15618934, y: 0.011138525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eabaeb8fd3c27290800000000000000
+      internalID: -7894031831934518557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_11
+      rect:
+        serializedVersion: 2
+        x: 4393
+        y: 9
+        width: 314
+        height: 588
+      alignment: 9
+      pivot: {x: 0.22138423, y: 0.014125315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4a12d7d7d704190800000000000000
+      internalID: -7980240561776778032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chelovek_vstaet_iz_pod_oblomkov_12
+      rect:
+        serializedVersion: 2
+        x: 4778
+        y: 10
+        width: 309
+        height: 587
+      alignment: 9
+      pivot: {x: 0.2876577, y: 0.010968889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87042e232112ce80800000000000000
+      internalID: -8159940732046276721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
