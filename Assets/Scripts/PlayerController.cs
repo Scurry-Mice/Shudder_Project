@@ -50,6 +50,12 @@ public class PlayerController : PhysicsObject
 
     }
 
-    
-   
+    void OnTriggerEnter2D(Collider2D Enter_Collision)
+    {
+        if (Enter_Collision.gameObject.name == "DeadZone")
+        {
+            Level_UI.rest();
+        }
+    }
+
 }

@@ -11,6 +11,7 @@ public class Level_UI : MonoBehaviour
     [SerializeField] private GameObject Back_Menu_Panel_GO;
     [SerializeField] private GameObject Exit_Game_Panel_GO;
     [SerializeField] private GameObject Panel_Setting_LVL;
+    internal static GameObject Panel_RESTART;
 
     [SerializeField] internal static GameObject Panel_Zapisok;
     [SerializeField] internal static bool Bool_Notepad = false;
@@ -30,6 +31,7 @@ public class Level_UI : MonoBehaviour
         Panel_Setting_LVL = GameObject.Find("Canvas/Panel_Pause/Panel_Setting");
 
         Panel_Zapisok = GameObject.Find("Canvas/NotePad");
+        Panel_RESTART = GameObject.Find("Canvas/Panel_Restart");
 
         UI_Panel = GameObject.Find("Canvas/Panel_UI");
         Help_Panel = GameObject.Find("Canvas/Panel_UI/Panel_Help");
@@ -40,10 +42,19 @@ public class Level_UI : MonoBehaviour
         Exit_Game_Panel_GO.SetActive(false);
         Panel_Setting_LVL.SetActive(false);
 
+        Panel_RESTART.SetActive(false);
+
         Help_Panel.SetActive(false);
 
         Panel_Zapisok.SetActive(false);
         
+    }
+
+    
+
+    internal static void rest()
+    {
+        Panel_RESTART.SetActive(true);
     }
 
     /*
@@ -108,6 +119,8 @@ public class Level_UI : MonoBehaviour
             Panel_Setting_LVL.SetActive(false);
             Pause_Button_Panel_GO.SetActive(true);
         }
+
+        
     }
 
     public void Button_Setting_panel()
@@ -146,6 +159,10 @@ public class Level_UI : MonoBehaviour
     public void Back_Yes()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        if (Panel_RESTART)
+        {
+            Panel_RESTART.SetActive(false);
+        }
     }
 
     public void Back_No()
@@ -161,6 +178,13 @@ public class Level_UI : MonoBehaviour
         Application.Quit();
     }
 
-
+    public void RESTART ()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(2);
+        if (Panel_RESTART)
+        {
+            Panel_RESTART.SetActive(false);
+        }
+    }
 
 }
