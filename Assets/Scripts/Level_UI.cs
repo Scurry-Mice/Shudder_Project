@@ -12,11 +12,6 @@ public class Level_UI : MonoBehaviour
 
     [SerializeField] internal static GameObject Panel_Zapisok;
 
-
-    //Notepad
-    public static GameObject Notepad_Panel;
-    private bool isShowed = false;
-
     // UI
     [SerializeField] private GameObject UI_Panel;
 
@@ -40,8 +35,6 @@ public class Level_UI : MonoBehaviour
 
         Panel_Zapisok.SetActive(false);
 
-
-        Notepad_Panel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -56,11 +49,17 @@ public class Level_UI : MonoBehaviour
         //    Panel_Zapisok.SetActive(false);
         //}
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !Panel_Zapisok)
         {
             Pause_Button_Panel_GO.SetActive(true);
             Pause_Panel.SetActive(true);
             UI_Panel.SetActive(false);
+            
+        }
+
+        if (Panel_Zapisok && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Panel_Zapisok.SetActive(false);
         }
         
     }
