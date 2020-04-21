@@ -5,9 +5,9 @@ using UnityEngine;
 public class Camera_Script : MonoBehaviour
 {
     //типа сглаживание
-    public float dumping = 1.5f;
+    public float dumping = 2.5f;
     //размеры смещения камеры относительно персонажа
-    public Vector2 offset = new Vector2(2f, 1f);
+    public Vector2 offset = new Vector2(0f, 1.5f);
 
     //положение персонажа
     private Transform Hero_position;

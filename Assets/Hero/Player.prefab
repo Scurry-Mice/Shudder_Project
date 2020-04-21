@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 5239526921893861560}
   - component: {fileID: 5239526921893861575}
   - component: {fileID: 2708316770710608146}
+  - component: {fileID: -2876669985676995303}
   - component: {fileID: 3647466386559825768}
   - component: {fileID: 964946266398189210}
-  - component: {fileID: -2876669985676995303}
+  - component: {fileID: 6849872601847782363}
+  - component: {fileID: 3001872104325087692}
   m_Layer: 9
   m_Name: Player
   m_TagString: Hero_Kitty
@@ -124,6 +126,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.1, y: 0.0001}
   m_Direction: 0
+--- !u!95 &-2876669985676995303
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239526921893861571}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 63db0f679d2c58540aebbecd8572c1e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &3647466386559825768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,22 +175,34 @@ MonoBehaviour:
   gravityModifier: 1
   maxSpeed: 3
   jumpTakeOffSpeed: 11
---- !u!95 &-2876669985676995303
-Animator:
-  serializedVersion: 3
+--- !u!114 &6849872601847782363
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5239526921893861571}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 63db0f679d2c58540aebbecd8572c1e7, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 502d8c79c852c884b8e574d225aa9f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footsteps: {fileID: 8300000, guid: ca23edbdc16abd74eb2f307fe7ecb445, type: 3}
+--- !u!114 &3001872104325087692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5239526921893861571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d5182d7acb7ef478ad4279ae7c1664, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 00000000
+  slots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

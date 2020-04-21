@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PhysicsObject : MonoBehaviour
 {
@@ -37,6 +38,12 @@ public class PhysicsObject : MonoBehaviour
     {
         targetVelocity = Vector2.zero;
         ComputeVelocity();
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        
+        SceneManager.LoadScene("Menu_Scene");
     }
 
     protected virtual void ComputeVelocity()
