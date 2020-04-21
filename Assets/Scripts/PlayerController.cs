@@ -66,7 +66,7 @@ public class PlayerController : PhysicsObject
 
         if (Enter_Collision.gameObject.name == "FINISH_QUEST_2" && LOM_IN)
         {
-            Quests.GO_Q_2();
+            Quests.GO_Q_5();
             Destroy(Enter_Collision.gameObject);
         }
     }
