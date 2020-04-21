@@ -5119,6 +5119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 796516840992054431, guid: 461895dc6becdb1458b089bb314689a0,
+        type: 3}
+      propertyPath: m_Name
+      value: Text_quest
+      objectReference: {fileID: 0}
     - target: {fileID: 1372458408424704502, guid: 461895dc6becdb1458b089bb314689a0,
         type: 3}
       propertyPath: m_AnchoredPosition.x
