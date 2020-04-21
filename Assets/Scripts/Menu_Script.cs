@@ -19,7 +19,7 @@ public class Menu_Script : MonoBehaviour
         
         Exit_Panel.SetActive(false);
         Level_panel.SetActive(false);
-        //Setting_Panel.SetActive(false);
+        Setting_Panel.SetActive(false);
     }
 
     // Update is called once per frame
