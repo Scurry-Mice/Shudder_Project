@@ -8,5 +8,6 @@ public class OpenNotepad : MonoBehaviour
     {
         Level_UI.Panel_Zapisok.SetActive(true);
         Level_UI.Find_Notes_TXT(Notes.Notes_1);
+        Level_UI.Bool_Notepad = true;
     }
 }
