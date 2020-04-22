@@ -165,12 +165,12 @@ TextureImporter:
       name: chelovek_vstaet_iz_pod_oblomkov_0
       rect:
         serializedVersion: 2
-        x: 193
+        x: 198
         y: 21
         width: 232
         height: 605
       alignment: 9
-      pivot: {x: 0.44107896, y: 0.018740183}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,7 +191,7 @@ TextureImporter:
         width: 225
         height: 608
       alignment: 9
-      pivot: {x: 0.39064345, y: 0.02111494}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,7 +212,7 @@ TextureImporter:
         width: 246
         height: 606
       alignment: 9
-      pivot: {x: 0.3055137, y: 0.024045875}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,7 +233,7 @@ TextureImporter:
         width: 227
         height: 609
       alignment: 9
-      pivot: {x: 0.33138862, y: 0.015167478}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: chelovek_vstaet_iz_pod_oblomkov_4
       rect:
         serializedVersion: 2
-        x: 1771
-        y: 14
+        x: 1775
+        y: 12
         width: 269
         height: 611
       alignment: 9
-      pivot: {x: 0.28657162, y: 0.012280023}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,7 +275,7 @@ TextureImporter:
         width: 253
         height: 613
       alignment: 9
-      pivot: {x: 0.28928348, y: 0.01164133}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,7 +296,7 @@ TextureImporter:
         width: 301
         height: 614
       alignment: 9
-      pivot: {x: 0.2638479, y: 0.010210367}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,7 +317,7 @@ TextureImporter:
         width: 292
         height: 616
       alignment: 9
-      pivot: {x: 0.13485342, y: 0.0073623504}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,12 +333,12 @@ TextureImporter:
       name: chelovek_vstaet_iz_pod_oblomkov_8
       rect:
         serializedVersion: 2
-        x: 3262
+        x: 3255
         y: 11
         width: 296
         height: 618
       alignment: 9
-      pivot: {x: 0.16749696, y: 0.015592335}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -355,11 +355,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3628
-        y: 9
+        y: 7
         width: 317
-        height: 591
+        height: 615
       alignment: 9
-      pivot: {x: 0.18089972, y: 0.011965824}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,9 +378,9 @@ TextureImporter:
         x: 3999
         y: 10
         width: 330
-        height: 590
+        height: 614
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -401,7 +401,7 @@ TextureImporter:
         width: 314
         height: 588
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,7 +422,7 @@ TextureImporter:
         width: 309
         height: 587
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
