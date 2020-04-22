@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class PlayerController : PhysicsObject
@@ -11,13 +12,17 @@ public class PlayerController : PhysicsObject
     public float jumpTakeOffSpeed = 7;
 
     private SpriteRenderer spriteRenderer;
-    private Animator animator;
+    private Animator animator;    
 
     // Use this for initialization
     void Awake()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
+
+        //spriteRenderer = GetComponent<SpriteRenderer>();
+
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+
+        animator = GetComponentInChildren<Animator>();
     }
 
     protected override void ComputeVelocity()
@@ -50,6 +55,7 @@ public class PlayerController : PhysicsObject
 
         targetVelocity = move * maxSpeed;
 
+        //transform.GetChild(0).transform.Rotate(groundNormal);
     }
 
     void OnTriggerEnter2D(Collider2D Enter_Collision)

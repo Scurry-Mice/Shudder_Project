@@ -41,6 +41,7 @@ public class PhysicsObject : MonoBehaviour
     {
         targetVelocity = Vector2.zero;
         ComputeVelocity();
+        
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -72,6 +73,7 @@ public class PhysicsObject : MonoBehaviour
         move = Vector2.up * deltaPosition.y;
 
         Movement(move, true);
+
     }
 
     void Movement(Vector2 move, bool yMovement)
