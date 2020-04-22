@@ -12,7 +12,10 @@ public class PlayerController : PhysicsObject
     public float jumpTakeOffSpeed = 7;
 
     private SpriteRenderer spriteRenderer;
-    private Animator animator;    
+    private Animator animator;
+    private float angle;
+    private bool isWalkingSideWall;
+
 
     // Use this for initialization
     void Awake()
@@ -55,7 +58,42 @@ public class PlayerController : PhysicsObject
 
         targetVelocity = move * maxSpeed;
 
-        //transform.GetChild(0).transform.Rotate(groundNormal);
+
+        if (groundNormal.x * 100 > 0)
+        {
+            angle = (groundNormal.x * (-100)) + 12;
+        }
+        else
+        {
+            angle = (groundNormal.x * (-100)) - 12;
+        }
+        
+
+        if (grounded == false || !isWalkingSideWall)
+        {
+            transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+
+        if (angle != 0 && grounded == true && isWalkingSideWall == true)
+        {
+            transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+
+
+        Debug.Log(groundNormal.x * 100);
+        Debug.Log(isWalkingSideWall);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("SideWall"))
+        {
+            isWalkingSideWall = true;
+        }
+        else
+        {
+            isWalkingSideWall = false;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D Enter_Collision)
