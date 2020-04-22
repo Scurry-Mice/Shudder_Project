@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 2708316770710608146}
   - component: {fileID: 5239526921893861575}
   - component: {fileID: -2876669985676995303}
-  - component: {fileID: 3647466386559825768}
   - component: {fileID: 964946266398189210}
   - component: {fileID: 6849872601847782363}
   - component: {fileID: 3001872104325087692}
@@ -145,20 +144,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3647466386559825768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5239526921893861571}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e34f2c4f48eca4e958de237156d2ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minGroundNormalY: 0.65
-  gravityModifier: 1
 --- !u!114 &964946266398189210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minGroundNormalY: 0.65
-  gravityModifier: 1
+  gravityModifier: 2
   maxSpeed: 3
   jumpTakeOffSpeed: 11
 --- !u!114 &6849872601847782363
