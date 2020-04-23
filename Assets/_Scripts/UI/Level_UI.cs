@@ -12,6 +12,7 @@ public class Level_UI : MonoBehaviour
     //Notes
     [SerializeField] internal static GameObject Panel_Zapisok;
     [SerializeField] internal static bool Bool_Notepad = false;
+    [SerializeField] internal static bool Bool_PauseActive = false;
 
     // UI
     [SerializeField] private GameObject UI_Panel;
@@ -47,15 +48,18 @@ public class Level_UI : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) && !Bool_Notepad)
         {
-            Pause_Panel.SetActive(true);
-            UI_Panel.SetActive(false);
+            Pause_Panel.SetActive(!Bool_PauseActive);
+            UI_Panel.SetActive(Bool_PauseActive);
+            Bool_PauseActive = !Bool_PauseActive;
         }
 
         if (Panel_Zapisok && Input.GetKeyDown(KeyCode.Escape))
         {
             Panel_Zapisok.SetActive(false);
             Bool_Notepad = false;
-        }        
+        }
+
+       
     }
 
     internal static string Find_Notes_TXT(string Text)
@@ -69,6 +73,7 @@ public class Level_UI : MonoBehaviour
     {
         Pause_Panel.SetActive(false);
         UI_Panel.SetActive(true);
+        Bool_PauseActive = false;
     }
 
     //выход в меню

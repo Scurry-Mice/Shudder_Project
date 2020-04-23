@@ -15,6 +15,7 @@ public class PlayerController : PhysicsObject
     private Animator animator;
     private float angle;
     private bool isWalkingSideWall;
+    public bool flipSprite;
 
 
     // Use this for initialization
@@ -45,9 +46,13 @@ public class PlayerController : PhysicsObject
             {
                 velocity.y = velocity.y * 0.5f;
             }
+        }    
+
+        if (Mathf.Abs(move.x) >= 0.01f)
+        {
+           flipSprite  = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
         }
 
-        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
         if (flipSprite)
         {
             spriteRenderer.flipX = !spriteRenderer.flipX;
@@ -58,17 +63,15 @@ public class PlayerController : PhysicsObject
 
         targetVelocity = move * maxSpeed;
 
-
         if (groundNormal.x * 100 > 0)
         {
-            angle = (groundNormal.x * (-100)) + 12;
+            angle = (groundNormal.x * (-100)) + 15;
         }
         else
         {
-            angle = (groundNormal.x * (-100)) - 12;
+            angle = (groundNormal.x * (-100)) - 15;
         }
         
-
         if (grounded == false || !isWalkingSideWall)
         {
             transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -78,7 +81,6 @@ public class PlayerController : PhysicsObject
         {
             transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, angle);
         }
-
 
         Debug.Log(groundNormal.x * 100);
         Debug.Log(isWalkingSideWall);

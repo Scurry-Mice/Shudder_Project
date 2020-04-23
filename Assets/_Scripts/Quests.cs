@@ -21,44 +21,21 @@ public class Quests : MonoBehaviour
 
     internal static void GO_Q_1()
     {
-        GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_1;
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = Quest_1;
     }
 
     internal static void GO_Q_2()
     {
-        GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_2;
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = Quest_2;
     }
 
     internal static void GO_Q_5()
     {
-        GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_5;
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = Quest_5;
     }
 
     internal static void GO_Q_6()
     {
-        GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_6;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        if (Input.GetKeyDown(KeyCode.U))
-        {
-            GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_1;
-        }
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_2;
-        }
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_3;
-        }
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            GameObject.Find("Canvas/Panel_UI/Text_quest").GetComponent<Text>().text = Quest_4;
-        }
-        */
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = Quest_6;
     }
 }
