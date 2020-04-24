@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Camera_Script : MonoBehaviour
+public class Camera : MonoBehaviour
 {
     //типа сглаживание
     public float dumping = 2.5f;

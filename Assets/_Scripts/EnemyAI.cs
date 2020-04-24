@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GUS_lvl_2 : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
     [SerializeField] private float Patrul_A;
     [SerializeField] private float Patrul_B;

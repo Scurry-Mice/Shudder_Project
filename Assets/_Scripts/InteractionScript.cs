@@ -14,14 +14,8 @@ public class InteractionScript : MonoBehaviour
                 if (eachChild.name == "Luke")
                 {
                     eachChild.Translate(-2, 0, 0);
-                    Debug.Log("Child found. Name: " + eachChild.name);
                 }
             }
-        }
-
-        if (LukeRef != null)
-        {
-            //LukeRef.Rotate(0, 0, 0);   
         }
     }
     

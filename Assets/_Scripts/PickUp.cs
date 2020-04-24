@@ -26,7 +26,7 @@ public class PickUp : MonoBehaviour
 
                     if (gameObject.CompareTag("LOM"))
                     {
-                        PlayerController.LOM_IN = true;
+                        PlayerController.hasLom = true;
                     }
 
                     Destroy(gameObject);

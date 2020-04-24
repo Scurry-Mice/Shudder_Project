@@ -32,22 +32,12 @@ public class PhysicsObject : MonoBehaviour
         contactFilter.useTriggers = false;
         contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
         contactFilter.useLayerMask = true;
-
-        Quests.GO_Q_1();
-
     }
 
     void Update()
     {
         targetVelocity = Vector2.zero;
-        ComputeVelocity();
-        
-    }
-
-    private void OnControllerColliderHit(ControllerColliderHit hit)
-    {
-        
-        SceneManager.LoadScene("Menu_Scene");
+        ComputeVelocity();      
     }
 
     protected virtual void ComputeVelocity()
@@ -73,7 +63,6 @@ public class PhysicsObject : MonoBehaviour
         move = Vector2.up * deltaPosition.y;
 
         Movement(move, true);
-
     }
 
     void Movement(Vector2 move, bool yMovement)
@@ -111,8 +100,6 @@ public class PhysicsObject : MonoBehaviour
                 float modifiedDistance = hitBufferList[i].distance - shellRadius;
                 distance = modifiedDistance < distance ? modifiedDistance : distance;
             }
-
-
         }
 
         rb2d.position = rb2d.position + move.normalized * distance;

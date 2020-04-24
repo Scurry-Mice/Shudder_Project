@@ -5,8 +5,10 @@ using UnityEngine;
 
 public class PlayerController : PhysicsObject
 {
+    public static PlayerController instance;
+
     bool q3 = false;
-    internal static bool LOM_IN = false;
+    public static bool hasLom = false;
 
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
@@ -17,15 +19,18 @@ public class PlayerController : PhysicsObject
     private bool isWalkingSideWall;
     public bool flipSprite;
 
-
-    // Use this for initialization
     void Awake()
     {
-
-        //spriteRenderer = GetComponent<SpriteRenderer>();
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance == this)
+        {
+            Destroy(gameObject);
+        }
 
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
-
         animator = GetComponentInChildren<Animator>();
     }
 
@@ -81,9 +86,6 @@ public class PlayerController : PhysicsObject
         {
             transform.GetChild(0).transform.rotation = Quaternion.Euler(0, 0, angle);
         }
-
-        Debug.Log(groundNormal.x * 100);
-        Debug.Log(isWalkingSideWall);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -105,27 +107,26 @@ public class PlayerController : PhysicsObject
             Level_UI.rest();
         }
 
-        if (Enter_Collision.gameObject.name == "FINISH_QUEST_1")
+        if (Enter_Collision.gameObject.name == "Quest1End")
         {
-            Quests.GO_Q_2();
+            Quests.RunQuest2();
             Destroy(Enter_Collision.gameObject);
         }
 
-        if (Enter_Collision.gameObject.name == "FINISH_QUEST_2" && LOM_IN)
+        if (Enter_Collision.gameObject.name == "Quest2End" && hasLom)
         {
-            Quests.GO_Q_5();
-            HUMANOID.AnimHuman.SetTrigger("LomReady");
+            Quests.RunQuest3();
+            Human.AnimHuman.SetTrigger("LomReady");
             Destroy(Enter_Collision.gameObject);
-            HUMANOID.fffff = true;
-            HUMANOID.sss();
+            Human.canMove = true;
+            Human.setFlipVariable();
             q3 = true;
         }
 
-        if (Enter_Collision.gameObject.name == "FINISH_QUEST_3")
+        if (Enter_Collision.gameObject.name == "Quest3End")
         {
             if (q3)
             {
-                Quests.GO_Q_6();
                 Destroy(Enter_Collision.gameObject);
                 UnityEngine.SceneManagement.SceneManager.LoadScene(3);
             }
