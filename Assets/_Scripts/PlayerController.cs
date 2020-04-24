@@ -7,7 +7,6 @@ public class PlayerController : PhysicsObject
 {
     public static PlayerController instance;
 
-    bool q3 = false;
     public static bool hasLom = false;
 
     public float maxSpeed = 7;
@@ -106,34 +105,5 @@ public class PlayerController : PhysicsObject
         {
             Level_UI.rest();
         }
-
-        if (Enter_Collision.gameObject.name == "Quest1End")
-        {
-            Quests.RunQuest2();
-            Destroy(Enter_Collision.gameObject);
-        }
-
-        if (Enter_Collision.gameObject.name == "Quest2End" && hasLom)
-        {
-            Quests.RunQuest3();
-            Human.AnimHuman.SetTrigger("LomReady");
-            Destroy(Enter_Collision.gameObject);
-            Human.canMove = true;
-            Human.setFlipVariable();
-            q3 = true;
-        }
-
-        if (Enter_Collision.gameObject.name == "Quest3End")
-        {
-            if (q3)
-            {
-                Destroy(Enter_Collision.gameObject);
-                UnityEngine.SceneManagement.SceneManager.LoadScene(3);
-            }
-            
-        }
     }
-
-    
-
 }
