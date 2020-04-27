@@ -1,0 +1,2 @@
+стены[[:space:]]без[[:space:]]дыр.png filter=lfs diff=lfs merge=lfs -text
+стены.png filter=lfs diff=lfs merge=lfs -text
