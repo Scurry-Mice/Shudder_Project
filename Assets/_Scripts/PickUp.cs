@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUp : MonoBehaviour
+public class PickUp : MonoBehaviour, IInteractable
 {
     private Inventory inventory;
     public GameObject itemButton;
@@ -12,26 +12,23 @@ public class PickUp : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Hero_Kitty").GetComponent<Inventory>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void Interact()
     {
-        if (other.CompareTag("Hero_Kitty"))
+        for (int i = 0; i < inventory.slots.Length; i++)
         {
-            for (int i = 0; i < inventory.slots.Length; i++)
+            if (inventory.isFull[i] == false)
             {
-                if (inventory.isFull[i] == false)
+                // ITEAM CAN BE ADDED TO INVENTORY! 
+                inventory.isFull[i] = true;
+                Instantiate(itemButton, inventory.slots[i].transform, false);
+
+                if (gameObject.CompareTag("LOM"))
                 {
-                    // ITEAM CAN BE ADDED TO INVENTORY! 
-                    inventory.isFull[i] = true;
-                    Instantiate(itemButton, inventory.slots[i].transform, false);
-
-                    if (gameObject.CompareTag("LOM"))
-                    {
-                        PlayerController.hasLom = true;
-                    }
-
-                    Destroy(gameObject);
-                    break;
+                    PlayerController.hasLom = true;
                 }
+
+                Destroy(gameObject);
+                break;
             }
         }
     }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2775684481769472146}
   - component: {fileID: 431666583091144287}
   - component: {fileID: 7869279267427626344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BetonPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

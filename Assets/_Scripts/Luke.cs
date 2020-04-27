@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractionScript : MonoBehaviour
+public class Luke : MonoBehaviour
 {
     public Transform LukeRef;
     public bool canMove;
