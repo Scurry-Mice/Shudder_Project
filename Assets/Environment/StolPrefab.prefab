@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2937678709426139676}
   - component: {fileID: 1037342848643986940}
   - component: {fileID: 3325653006060573251}
+  - component: {fileID: 2743533855422006266}
   m_Layer: 8
   m_Name: StolPrefab
   m_TagString: Untagged
@@ -93,7 +94,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.016945362, y: 0.9988257}
   m_SpriteTilingProperty:
@@ -108,3 +109,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6432161, y: 0.18813598}
   m_EdgeRadius: 0
+--- !u!251 &2743533855422006266
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5309903717631238665}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
