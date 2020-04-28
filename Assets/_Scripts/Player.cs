@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -9,6 +10,8 @@ public class Player : MonoBehaviour
 
     public static bool hasLom;
     public static bool hasBind;
+    public static bool hasGK;
+    public static bool hasSK;
 
     public float maxSpeed = 3;
     public float jumpTakeOffSpeed = 3;

@@ -6,11 +6,12 @@ public class QuestManager : MonoBehaviour
     private string quest0 = "Найти хозяина";
     private string quest1 = "Хозяин прижат и не может выбраться, думает о каком то ломе, что это?";
     private string quest2 = "Со стороны лестницы донеслись звуки ращрушения. Надо пойти и посмотреть";
-    private string quest3 = "Хм, в таком состоянии он далеко не уйдет, надо найти бинты";
+    private string quest3 = "Надо спуститься вниз, вдруг смогу найти лекарства для человека";
     private string quest4 = "Скорее выйти с хозяином из квартиры!";
 
     public GameObject findHumanObject;
     public GameObject findLomObject;
+    public GameObject searchForSoundsObject;
     public GameObject findMedicineObject;
     public GameObject leaveApartementsObject;
 
@@ -23,11 +24,13 @@ public class QuestManager : MonoBehaviour
 
         FindHuman.findHumanDone += findHumanDone;
         FindLom.findLomDone += findLomDone;
+        SearchForSounds.searchForSoundsDone += searchForSoundsDone;
         FindMedicine.findMedicineDone += findMedicineDone;
         LeaveApartments.leaveApartmentsDone += leaveApartmentsDone;
 
         findHumanObject.SetActive(true);
         findLomObject.SetActive(false);
+        searchForSoundsObject.SetActive(false);
         findMedicineObject.SetActive(false);
         leaveApartementsObject.SetActive(false);
     }
@@ -48,17 +51,20 @@ public class QuestManager : MonoBehaviour
         nextLevelBeton.SetActive(false);
 
         findLomObject.SetActive(false);
-        findMedicineObject.SetActive(true);
+        searchForSoundsObject.SetActive(true);
     }
 
-    void findSounds()
+    void searchForSoundsDone()
     {
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest3;
 
+        searchForSoundsObject.SetActive(false);
+        findMedicineObject.SetActive(true);
     }
 
     void findMedicineDone()
     {
-        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest3;
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest4;
 
         Human.AnimHuman.SetTrigger("LomReady");
         Human.canMove = true;

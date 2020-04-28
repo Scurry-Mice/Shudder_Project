@@ -31,6 +31,16 @@ public class PickUp : MonoBehaviour, IInteractable
                     Player.hasBind = true;
                 }
 
+                if (gameObject.name == "GoldenKey_Item")
+                {
+                    Player.hasGK = true;
+                }
+
+                if (gameObject.name == "SilverKey_Item")
+                {
+                    Player.hasSK = true;
+                }
+
                 Destroy(gameObject);
                 break;
             }
