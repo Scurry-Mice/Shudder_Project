@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
 {
     public static Player instance;
 
+    public static bool hasLom;
+    public static bool hasBind;
+
     public float maxSpeed = 3;
     public float jumpTakeOffSpeed = 3;
 

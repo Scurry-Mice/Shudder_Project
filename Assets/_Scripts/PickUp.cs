@@ -18,13 +18,17 @@ public class PickUp : MonoBehaviour, IInteractable
         {
             if (inventory.isFull[i] == false)
             {
-                // ITEAM CAN BE ADDED TO INVENTORY! 
                 inventory.isFull[i] = true;
                 Instantiate(itemButton, inventory.slots[i].transform, false);
 
-                if (gameObject.CompareTag("LOM"))
+                if (gameObject.name == "Lom_Item")
                 {
-                    PlayerController.hasLom = true;
+                    Player.hasLom = true;
+                }
+
+                if (gameObject.name == "Bind_Item")
+                {
+                    Player.hasBind = true;
                 }
 
                 Destroy(gameObject);

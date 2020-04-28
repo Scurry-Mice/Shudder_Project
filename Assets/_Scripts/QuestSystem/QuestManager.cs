@@ -1,41 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
 {
     private string quest0 = "Найти хозяина";
     private string quest1 = "Хозяин прижат и не может выбраться, думает о каком то ломе, что это?";
-    private string quest2 = "Скорее выйти с хозяином из квартиры!";
+    private string quest2 = "Хм, в таком состоянии он далеко не уйдет, надо найти лекарство";
+    private string quest3 = "Скорее выйти с хозяином из квартиры!";
 
-    public static bool canEnd;
+    public GameObject findHumanObject;
+    public GameObject findLomObject;
+    public GameObject findMedicineObject;
+    public GameObject leaveApartementsObject;
     
     void Start()
     {
-        Observer.stageDone += StageActivated;
-        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest0;      
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest0;
+
+        FindHuman.findHumanDone += findHumanDone;
+        FindLom.findLomDone += findLomDone;
+        FindMedicine.findMedicineDone += findMedicineDone;
+        LeaveApartments.leaveApartmentsDone += leaveApartmentsDone;
+
+        findHumanObject.SetActive(true);
+        findLomObject.SetActive(false);
+        findMedicineObject.SetActive(false);
+        leaveApartementsObject.SetActive(false);
     }
 
-    void StageActivated(int stage)
+    void findHumanDone()
     {
-        if (stage == 1)
-        {
-            GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest1;
-        }
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest1;
 
-        if (stage == 2)
-        {
-            GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest2;
-            Human.AnimHuman.SetTrigger("LomReady");
-            Human.canMove = true;
-            Human.setFlipVariable();
-            canEnd = true;
-        }
+        findHumanObject.SetActive(false);
+        findLomObject.SetActive(true);
+    }
 
-        if (stage == 3)
-        { 
-            UnityEngine.SceneManagement.SceneManager.LoadScene(3);     
-        }
+    void findLomDone()
+    {
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest2;
+
+        findLomObject.SetActive(false);
+        findMedicineObject.SetActive(true);
+    }
+
+    void findMedicineDone()
+    {
+        GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest3;
+
+        Human.AnimHuman.SetTrigger("LomReady");
+        Human.canMove = true;
+        Human.setFlipVariable();
+
+        findMedicineObject.SetActive(false);
+        leaveApartementsObject.SetActive(true);
+    }
+
+    void leaveApartmentsDone()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
     }
 }
