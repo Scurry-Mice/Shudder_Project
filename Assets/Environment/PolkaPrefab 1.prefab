@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9053853234243653751}
   - component: {fileID: 1041108303654188604}
   - component: {fileID: -8356698857593266489}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PolkaPrefab 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

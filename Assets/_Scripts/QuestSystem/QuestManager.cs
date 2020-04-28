@@ -5,13 +5,17 @@ public class QuestManager : MonoBehaviour
 {
     private string quest0 = "Найти хозяина";
     private string quest1 = "Хозяин прижат и не может выбраться, думает о каком то ломе, что это?";
-    private string quest2 = "Хм, в таком состоянии он далеко не уйдет, надо найти лекарство";
-    private string quest3 = "Скорее выйти с хозяином из квартиры!";
+    private string quest2 = "Со стороны лестницы донеслись звуки ращрушения. Надо пойти и посмотреть";
+    private string quest3 = "Хм, в таком состоянии он далеко не уйдет, надо найти бинты";
+    private string quest4 = "Скорее выйти с хозяином из квартиры!";
 
     public GameObject findHumanObject;
     public GameObject findLomObject;
     public GameObject findMedicineObject;
     public GameObject leaveApartementsObject;
+
+    public GameObject nextLevelEntrance;
+    public GameObject nextLevelBeton;
     
     void Start()
     {
@@ -40,8 +44,16 @@ public class QuestManager : MonoBehaviour
     {
         GameObject.Find("Canvas/Panel_UI/QuestName/QuestText").GetComponent<Text>().text = quest2;
 
+        nextLevelEntrance.GetComponent<AudioSource>().Play();
+        nextLevelBeton.SetActive(false);
+
         findLomObject.SetActive(false);
         findMedicineObject.SetActive(true);
+    }
+
+    void findSounds()
+    {
+
     }
 
     void findMedicineDone()
