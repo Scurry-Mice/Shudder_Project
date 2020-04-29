@@ -17,8 +17,8 @@ public class DownloadMenu : MonoBehaviour
 
     void SetIntro1()
     {
-        string text = "Всегда что-то происходит первый раз…";
-        string TEXT = GameObject.Find("Canvas/Text").GetComponent<Text>().text = text;
+        string text = "Всегда что-то случается в первый раз…";
+        //string TEXT = GameObject.Find("Canvas/Text").GetComponent<Text>().text = text;
 
         gameObject.GetComponent<AudioSource>().PlayOneShot(audioClipArray[0]);
     }
@@ -26,7 +26,7 @@ public class DownloadMenu : MonoBehaviour
     void SetIntro2()
     {
         string text = "Именно поэтому, никто не ожидал землетрясения в центре России!";
-        string TEXT = GameObject.Find("Canvas/Text").GetComponent<Text>().text = text;
+        //string TEXT = GameObject.Find("Canvas/Text").GetComponent<Text>().text = text;
 
         gameObject.GetComponent<AudioSource>().PlayOneShot(audioClipArray[1]);        
     }
