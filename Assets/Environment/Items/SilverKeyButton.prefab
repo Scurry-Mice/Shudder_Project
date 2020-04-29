@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 8043477186441151720}
   - component: {fileID: 957385299828257067}
   m_Layer: 5
-  m_Name: SilverKeyButton (1)
-  m_TagString: Untagged
+  m_Name: SilverKeyButton
+  m_TagString: SilverKeyButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

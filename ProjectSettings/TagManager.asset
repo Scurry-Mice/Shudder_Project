@@ -8,6 +8,9 @@ TagManager:
   - Ground
   - LOM
   - SideWall
+  - GoldenKeyButton
+  - SilverKeyButton
+  - LomButton
   layers:
   - Default
   - TransparentFX

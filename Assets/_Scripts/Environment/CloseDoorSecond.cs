@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CloseDoor : MonoBehaviour, IInteractable
+public class CloseDoorSecond : MonoBehaviour, IInteractable
 {
     public GameObject openDoor;
     public GameObject closeDoor;
@@ -15,9 +15,12 @@ public class CloseDoor : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (Player.hasGK)
+        if (Player.hasSK)
         {
             Destroy(gameObject.GetComponent<BoxCollider2D>());
+
+            Inventory.instance.DestroyObject("SilverKeyButton");
+            Player.hasSK = false;
 
             openDoor.SetActive(true);
             closeDoor.SetActive(false);

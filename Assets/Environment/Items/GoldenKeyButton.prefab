@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6499887801280427326}
   m_Layer: 5
   m_Name: GoldenKeyButton
-  m_TagString: Untagged
+  m_TagString: GoldenKeyButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
