@@ -4,9 +4,9 @@ using UnityEngine.UI;
 public class QuestManager : MonoBehaviour
 {
     private string quest0 = "Найти хозяина";
-    private string quest1 = "Хозяин прижат и не может выбраться, думает о каком то ломе, что это?";
-    private string quest2 = "Со стороны лестницы донеслись звуки ращрушения. Надо пойти и посмотреть";
-    private string quest3 = "Надо спуститься вниз, вдруг смогу найти лекарства для человека";
+    private string quest1 = "Хозяин зажат и не может выбраться, в квартире напротив должен быть лом";
+    private string quest2 = "Со стороны лестницы донеслись звуки разрушения. Надо посмотреть что случилось";
+    private string quest3 = "Надо спуститься вниз, вдруг смогу найти бинты для человека";
     private string quest4 = "Скорее выйти с хозяином из квартиры!";
 
     public GameObject findHumanObject;
