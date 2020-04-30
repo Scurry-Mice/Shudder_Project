@@ -11,6 +11,7 @@ TagManager:
   - GoldenKeyButton
   - SilverKeyButton
   - LomButton
+  - BintButton
   layers:
   - Default
   - TransparentFX

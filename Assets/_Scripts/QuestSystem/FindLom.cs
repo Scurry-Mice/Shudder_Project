@@ -6,7 +6,6 @@ using System;
 public class FindLom : MonoBehaviour
 {
     public static event Action findLomDone = delegate { };
-    public GameObject trashWood;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,7 +15,6 @@ public class FindLom : MonoBehaviour
             {
                 Inventory.instance.DestroyObject("LomButton");
                 findLomDone();
-                trashWood.SetActive(false);
             }
         }
     }

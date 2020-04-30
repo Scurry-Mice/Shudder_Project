@@ -6,6 +6,7 @@ using System;
 public class FindMedicine : MonoBehaviour
 {
     public static event Action findMedicineDone = delegate { };
+    public GameObject humanTrash;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,8 @@ public class FindMedicine : MonoBehaviour
             if (Player.hasBind)
             {
                 findMedicineDone();
+                humanTrash.SetActive(false);
+                Inventory.instance.DestroyObject("BintButton");
             }
         }
     }
